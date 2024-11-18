@@ -5,6 +5,7 @@ const lista = document.getElementById("listaUsuarios")
 
 
 fetch("https://jsonplaceholder.typicode.com/users")
+
     .then((response) => {
         if(!response.ok) {
             throw new Error("Ha ocurrido un error")
@@ -15,7 +16,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     .then((data)=>{
         console.log(data);
         
-        data.forEach(element => {
+        data.forEach(element => {   
             
             element.age = Math.floor(Math.random()*(max - min + 1) + min)
 
@@ -47,6 +48,10 @@ fetch("https://jsonplaceholder.typicode.com/users")
         });
 
        
+    })
+
+    .catch((err) => {
+        console.log("err fetch", err)
     })
 
 
