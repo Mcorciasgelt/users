@@ -27,16 +27,16 @@ fetch("https://jsonplaceholder.typicode.com/users")
                 <div class="divUsuario">
                     <div class="divInformacion">
                         <p>
-                            Nombre: ${name}
-                            Edad:${age}
-                            Username: ${username}   
-                            Teléfono: ${phone}
-                            Email: ${email}
+                            Nombre: ${name}</br>
+                            Edad:${age}</br>
+                            Username: ${username}</br>   
+                            Teléfono: ${phone}</br>
+                            Email: ${email}</br>
                         </p>
                         <img src="./assets/img/${id}.jpeg" alt="${name}"></img>
                     </div>
                     <p>
-                        Compañía: ${element.company.name}
+                        Compañía: ${element.company.name}</br>
                         Dirección: ${element.address.street}, ${element.address.suite}, ${element.address.city}
                     </p>
 
