@@ -10,4 +10,22 @@ h1 {
   color: #333;
 }
 
+#listaUsuarios {
+  display: flex;
+
+}
+.divInformacion {
+  display: flex;
+}
+
+.divInformacion img{
+  width: 10%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.divInformacion p{
+  border: solid 1px;
+}
+
 
